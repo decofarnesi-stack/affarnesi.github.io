@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>acesso</title>
+
+<style>
+body {
+    background-color: #0a0a0a;
+    color: #d6d6d6;
+    font-family: "Courier New", monospace;
+    padding: 40px;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 700px;
+    margin: auto;
+}
+
+.small { font-size: 0.8em; opacity: 0.6; }
+.glitch { color: #ffffff; }
+.blink { animation: blink 1.2s infinite; }
+
+@keyframes blink {
+    50% { opacity: 0.2; }
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #333;
+    margin: 30px 0;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<p class="small" id="session"></p>
+
+<p>VEA: escuta ativa<br>SHINRA: instável</p>
+
+<hr>
+
+<p class="glitch">você não deveria estar aqui</p>
+
+<hr>
+
+<p>registro #77-b</p>
+
+<p>
+sinal detectado<br>
+origem: indefinida<br>
+estado: persistente
+</p>
+
+<p class="glitch">ela ainda responde</p>
+
+<hr>
+
+<p class="blink">não use o nome dela aqui</p>
+
+<hr>
+
+<p>
+se você está lendo isso,<br>
+não foi convidado<br>
+foi percebido
+</p>
+
+<hr>
+
+<p>
+VEA não reconhece mais o padrão<br>
+SHINRA continua executando<br>
+isso não foi programado
+</p>
+
+<hr>
+
+<p class="blink">(aguarde)</p>
+
+<hr>
+
+<p>você também trouxe algo com você</p>
+
+<hr>
+
+<p class="small">[ tentativa de contenção falhou ]</p>
+
+<hr>
+
+<p>
+retorne<br>
+ou prossiga sabendo que
+</p>
+
+<p class="glitch">
+ninguém voltou com a mesma forma
+</p>
+
+</div>
+
+<script>
+const now = new Date();
+const sessionId = Math.random().toString(36).substring(2, 8);
+
+document.getElementById("session").innerText =
+`[ acesso parcialmente autorizado | sessão ${sessionId} | ${now.toLocaleTimeString()} ]`;
+</script>
+
+</body>
+</html>
